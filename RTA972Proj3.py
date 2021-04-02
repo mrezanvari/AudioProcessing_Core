@@ -31,8 +31,8 @@ def fadeIn(audio, durationSamples):
         audio[start:end] = audio[start:end] * fade_curve
 
 
-recording = '/Users/mrezanvari/_MyFiles/Programs/Python/Spleeter/Spleeter_Trepanation/02 Preparation/other.wav'  # sys.argv[1]
-recording2 = '/Users/mrezanvari/_MyFiles/Programs/Python/Spleeter/Spleeter_Trepanation/01 The Key To Conscience/other.wav'
+recording = 'path1'  # sys.argv[1]
+recording2 = 'path2'
 y, sr = librosa.load(recording, sr=None)
 y2, sr = librosa.load(recording, sr=None)
 checkDir(os.getcwd() + '/Trepanation_out/')
